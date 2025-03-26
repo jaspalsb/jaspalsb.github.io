@@ -1,234 +1,124 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/my.css"/>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-      <!--Let browser know website is optimized for mobile-->
-      <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Jaspal Bainiwal</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaspal Bainiwal - Resume</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #13294B; /* UIUC navy */
+    }
+    header {
+      background: linear-gradient(90deg, #13294B 0%, #E84A27 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h1, h2 {
+      color: #13294B;
+    }
+    h3 {
+      margin-top: 1rem;
+      color: #E84A27;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .img-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .img-row img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #13294B;
+      border-radius: 8px;
+      flex: 1 1 calc(50% - 1rem);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jaspal Bainiwal</h1>
+    <p>USA Citizen | Phone: (408) 705-0860 | Email: jaspalbainiwal@gmail.com</p>
+  </header>
 
-    <body>
-<div class="navbar-fixed">
-  <nav class="orange accent-4 z-depth-2">
-    <div class="nav-wrapper container">
-      <ul id="nav-mobile" class="left hide-on-small-and-down">
-        <li><a href="#top" class="flow-text">Home</a></li>
-        <li><a href="#education" class="flow-text">Education</a></li>
-        <li><a href="#project" class="flow-text">Projects</a></li>
-        <li><a href="#skills" class="flow-text">Technology</a></li>
-        <li><a href="#experience" class="flow-text">Experience</a></li>
+  <main>
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="img-row">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Googleplex_HQ_%28cropped%29.jpg/640px-Googleplex_HQ_%28cropped%29.jpg" alt="Google HQ">
+        <img src="https://www.dmv.ca.gov/portal/uploads/2020/06/DMV_Logo_Transparent.png" alt="California DMV logo">
+      </div>
+
+      <h3>Software Developer – California DMV (Apr 2023 – Present)</h3>
+      <ul>
+        <li>Upgraded legacy systems to Salesforce</li>
+        <li>Developed apps, workflows, and triggers in Apex</li>
+        <li>Managed and analyzed large datasets with SQL</li>
+        <li>Tested modernized DMV field office site</li>
       </ul>
-    </div>
-  </nav>
-</div>
-<div class="container">
-  <div class="card large light-blue darken-3 z-depth-2">
-    <div class="section scrollspy" id="top">
-    <h1 class="white-text center-align my-name">Jaspal Bainiwal</h1>
-    <div id="typed-strings">
-    <p>Software Engineer.Developer.CS Student</p>
-    </div>
-    <h5 class="white-text center-align"><span id="typed"></span></h5>
-    </div>
-    <div class="section">
-    <div class="divider container"></div>
-        </div>
-    <div class="row section container">
-    <div class="col s2 offset-s4">
-      <a href="https://www.linkedin.com/in/JASPALBAINIWAL/" class="btn-floating btn-large orange accent-4 pulse text-align:center"><i class="fab fa-linkedin-in fa-5x"></i>Linkedin</a>
-    </div>
-    </div>
-  </div>
-</div>
-<div>
-  <div class="section">
-    <div class="divider container">
-      
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="card orange accent-4 z-depth-2">
-    <div class="section container">
-      <h1 class="white-text">Education</h1>
-          <div class="divider scrollspy" id="education"></div>
-    </div>
-    <div class="container row">
-      <div class="col s9">
-          <h4 class="white-text">Oregon State Unversity</h4>
-          <h5 class="white-text">B.S in Computer Science</h5>
-          <h6 class="white-text">Class of 2019</h6>
-      </div>
-      <div class="col s3">
-        <img class="circle responsive-img z-depth-2" src="img/osu.png">
-      </div>
-    </div>
-    <div class="container row">
-      <div class="col s9">
-          <h4 class="white-text">University of California, Davis</h4>
-          <h5 class="white-text">B.S in Managerial Economics</h5>
-          <h6 class="white-text">Class of 2014</h6>
-      </div>
-      <div class="col s3">
-        <img class="circle responsive-img z-depth-2" src="img/uc-davis.png">
-      </div>
-    </div>
-    <div class="container row">
-      <div class="col s9">
-          <h4 class="white-text">Santa Clara University</h4>
-          <h5 class="white-text">Advanced Accounting Proficiency Program</h5>
-          <h6 class="white-text">Class of 2015</h6>
-      </div>
-      <div class="col s3">
-        <img class="circle responsive-img z-depth-2" src="img/scu.png">
-      </div>
-    </div>
-    <div class="section"></div>
-  </div>
-</div>
-<div>
-  <div class="section">
-    <div class="divider container">
-      
-    </div>
-  </div>
-</div>
 
-<div>
-  <div class="section">
-    <div class="divider container">
-      
-    </div>
-  </div>
-</div>
+      <h3>Software Developer – Google (Jul 2021 – Jan 2023)</h3>
+      <ul>
+        <li>Built full-stack apps using Angular, Node.js, and Firebase</li>
+        <li>Created backend services using Google Cloud</li>
+        <li>Gathered requirements, designed architecture</li>
+        <li>Used Google Apps Script for automation</li>
+      </ul>
 
-<div class="container">
-  <div class="card orange accent-4 z-depth-2">
-    <div class="section container">
-      <h1 class="white-text">Technology</h1>
-          <div class="divider scrollspy" id="skills"></div>
-    </div>
-    <div class="section container">
-        <ul class="collapsible popout">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">data_usage</i>Database</div>
-      <div class="collapsible-body light-blue darken-3">
-            <div class="chip white">
-          <span class="flow-text">SQL</span>
-          </div>
-            <div class="chip white">
-          <span class="flow-text">Postgres</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">NoSQL</span>
-          </div>
-        </div>
-    </li>
-    <li class="active">
-      <div class="collapsible-header"><i class="material-icons">language</i>Programming Language</div>
-      <div class="collapsible-body light-blue darken-3">
-          <div class="chip white">
-          <span class="flow-text">C++</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">C</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">Python</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">Javascript</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">Assembly</span>
-          </div>
-                    <div class="chip white">
-          <span class="flow-text">HTML</span>
-          </div>
-                    <div class="chip white">
-          <span class="flow-text">CSS</span>
-          </div>
-           <div class="chip white">
-          <span class="flow-text">ES6</span>
-          </div>
-                   <div class="chip white">
-          <span class="flow-text">Bash</span>
-          </div>
+      <h3>Senior Software Engineer – Pratt & Whitney (Dec 2020 – Apr 2022)</h3>
+      <ul>
+        <li>Led Azure and RTLS integration project</li>
+        <li>Built scalable tools using Azure Functions and .NET</li>
+        <li>Used Angular for UI development</li>
+      </ul>
 
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">web</i>Framework</div>
-      <div class="collapsible-body light-blue darken-3">
-                   <div class="chip white">
-          <span class="flow-text">Express</span>
-          </div>
-                   <div class="chip white">
-          <span class="flow-text">React</span>
-          </div>
+      <h3>Previous Internships</h3>
+      <ul>
+        <li>OneCommunity Global – React.js, Node.js, MongoDB</li>
+        <li>Mangolytics Inc. – Python tools, dashboards, pipelines</li>
+        <li>Robert Half – IT Consulting across departments</li>
+        <li>BAM Software – Staff Accountant responsibilities</li>
+      </ul>
+    </section>
 
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">web_asset</i>Tools/Other</div>
-      <div class="collapsible-body light-blue darken-3">
-                   <div class="chip white">
-          <span class="flow-text">Node.js</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">REST API</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">Linux</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">Visual Studio</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">GCOV</span>
-          </div>
-          <div class="chip white">
-          <span class="flow-text">J unit</span>
-          </div>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </div>
-</div>
-<div>
-  <div class="section">
-    <div class="divider container">
-      
-    </div>
-  </div>
-</div>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: JavaScript, TypeScript, Python, Java, C#, C++, SQL</li>
+        <li>Frameworks: Node.js, Angular, React.js, Firebase, .NET</li>
+        <li>Tools: Git, TensorFlow, MySQL, NoSQL</li>
+        <li>Cloud: Azure, AWS, Google Cloud</li>
+        <li>Certifications: AZ-900, AWS Developer Associate, Salesforce Certified Developer</li>
+      </ul>
+    </section>
 
-
-
-<div>
-  <div class="section">
-    <div class="divider container">
-      
-    </div>
-  </div>
-</div>
-      <!--JavaScript at end of body for optimized loading-->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/typed.min.js"></script>
-      <script type="text/javascript" src="js/my.js"></script>
-      <script>  $(document).ready(function(){
-                $('.collapsible').collapsible();
-                });
-                $(document).ready(function(){
-                $('.scrollspy').scrollSpy();
-                });</script>
-    </body>
-  </html>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Master of Computer Science, University of Illinois Urbana-Champaign – Expected 2026</li>
+        <li>B.Sc. Computer Science, Oregon State University – 2019</li>
+        <li>B.Sc. Managerial Economics, UC Davis – 2014</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

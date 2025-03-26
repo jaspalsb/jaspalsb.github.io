@@ -3,122 +3,192 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaspal Bainiwal - Resume</title>
+  <title>Jaspal Bainiwal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :root {
+      --text-main: #0A0A0A;
+      --text-muted: #6b6b6b;
+      --bg: #ffffff;
+      --primary: #000000;
+      --button-bg: #000000;
+      --button-text: #ffffff;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #ffffff;
-      color: #13294B; /* UIUC navy */
     }
-    header {
-      background: linear-gradient(90deg, #13294B 0%, #E84A27 100%);
-      color: white;
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
       padding: 2rem;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    h1, h2 {
-      color: #13294B;
-    }
-    h3 {
-      margin-top: 1rem;
-      color: #E84A27;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .img-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      max-width: 800px;
+      text-align: center;
       margin-bottom: 2rem;
     }
-    .img-row img {
-      max-width: 100%;
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header h1 span {
+      color: var(--text-muted);
+    }
+
+    .button {
+      background-color: var(--button-bg);
+      color: var(--button-text);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      margin-top: 1rem;
+      display: inline-block;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #333333;
+    }
+
+    .content {
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .section {
+      padding: 1.5rem;
+      border: 1px solid #e0e0e0;
+      border-radius: var(--radius);
+      background: #fafafa;
+    }
+
+    .section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section h3 {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .school-logo {
+      width: 60px;
       height: auto;
-      border: 2px solid #13294B;
-      border-radius: 8px;
-      flex: 1 1 calc(50% - 1rem);
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #999;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.75rem;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+
+      .content {
+        padding: 1rem;
+      }
     }
   </style>
+  
 </head>
 <body>
   <header>
-    <h1>Jaspal Bainiwal</h1>
-    <p>USA Citizen | Phone: (408) 705-0860 | Email: jaspalbainiwal@gmail.com</p>
+    <h1><span>I'm Jaspal,</span> a software developer & analyst</h1>
+    <a href="https://www.linkedin.com/in/jaspalbainiwal/" class="button" target="_blank" rel="noopener noreferrer">Let’s Talk →</a>
   </header>
 
-  <main>
-    <section>
+  <div class="content">
+    <div class="section">
       <h2>Professional Experience</h2>
-      <div class="img-row">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Googleplex_HQ_%28cropped%29.jpg/640px-Googleplex_HQ_%28cropped%29.jpg" alt="Google HQ">
-        <img src="https://www.dmv.ca.gov/portal/uploads/2020/06/DMV_Logo_Transparent.png" alt="California DMV logo">
-      </div>
-
-      <h3>Software Developer – California DMV (Apr 2023 – Present)</h3>
+      <h3>Software Developer – California DMV (2023–Present)</h3>
       <ul>
         <li>Upgraded legacy systems to Salesforce</li>
-        <li>Developed apps, workflows, and triggers in Apex</li>
-        <li>Managed and analyzed large datasets with SQL</li>
-        <li>Tested modernized DMV field office site</li>
+        <li>Developed workflows, triggers using Apex</li>
+        <li>Analyzed large datasets using SQL</li>
+        <li>Tested modernized field office site</li>
       </ul>
-
-      <h3>Software Developer – Google (Jul 2021 – Jan 2023)</h3>
+      <h3>Software Developer – Google (2021–2023)</h3>
       <ul>
-        <li>Built full-stack apps using Angular, Node.js, and Firebase</li>
-        <li>Created backend services using Google Cloud</li>
-        <li>Gathered requirements, designed architecture</li>
-        <li>Used Google Apps Script for automation</li>
+        <li>Built full-stack apps (Angular, Node.js, Firebase)</li>
+        <li>Developed backend services on Google Cloud</li>
+        <li>Created automation via Google Apps Script</li>
       </ul>
-
-      <h3>Senior Software Engineer – Pratt & Whitney (Dec 2020 – Apr 2022)</h3>
+      <h3>Senior Software Engineer – Pratt & Whitney (2020–2022)</h3>
       <ul>
-        <li>Led Azure and RTLS integration project</li>
-        <li>Built scalable tools using Azure Functions and .NET</li>
-        <li>Used Angular for UI development</li>
+        <li>Integrated Azure with RTLS systems</li>
+        <li>Built tools with Azure Functions, .NET, Angular</li>
       </ul>
-
-      <h3>Previous Internships</h3>
+      <h3>Other Roles</h3>
       <ul>
-        <li>OneCommunity Global – React.js, Node.js, MongoDB</li>
-        <li>Mangolytics Inc. – Python tools, dashboards, pipelines</li>
-        <li>Robert Half – IT Consulting across departments</li>
-        <li>BAM Software – Staff Accountant responsibilities</li>
+        <li>OneCommunity Global – Frontend Intern (React.js)</li>
+        <li>Mangolytics – Data Analyst Intern (Python, dashboards)</li>
+        <li>Robert Half – IT Consultant</li>
+        <li>BAM Software – Staff Accountant</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="section">
       <h2>Skills</h2>
       <ul>
-        <li>Languages: JavaScript, TypeScript, Python, Java, C#, C++, SQL</li>
-        <li>Frameworks: Node.js, Angular, React.js, Firebase, .NET</li>
-        <li>Tools: Git, TensorFlow, MySQL, NoSQL</li>
-        <li>Cloud: Azure, AWS, Google Cloud</li>
-        <li>Certifications: AZ-900, AWS Developer Associate, Salesforce Certified Developer</li>
+        <li><strong>Languages:</strong> JavaScript, TypeScript, Python, Java, C#, C++, SQL</li>
+        <li><strong>Frameworks:</strong> Node.js, Angular, React, Firebase, .NET</li>
+        <li><strong>Cloud:</strong> Azure, AWS, Google Cloud</li>
+        <li><strong>Tools:</strong> Git, TensorFlow, MySQL, NoSQL</li>
+        <li><strong>Certifications:</strong> AZ-900, AWS Developer Associate, Salesforce Certified Developer</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="section">
       <h2>Education</h2>
       <ul>
-        <li>Master of Computer Science, University of Illinois Urbana-Champaign – Expected 2026</li>
-        <li>B.Sc. Computer Science, Oregon State University – 2019</li>
-        <li>B.Sc. Managerial Economics, UC Davis – 2014</li>
+        <li><img src="uiuc.png" alt="UIUC Logo" class="school-logo" />Master of Computer Science, UIUC (Expected 2026)</li>
+        <li><img src="osu.png" alt="OSU Logo" class="school-logo" />B.Sc. Computer Science, Oregon State University (2019)</li>
+        <li><img src="ucd.png" alt="UCD Logo" class="school-logo" />B.Sc. Managerial Economics, UC Davis (2014)</li>
       </ul>
-    </section>
-  </main>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Jaspal Bainiwal. All rights reserved.
+  </div>
 </body>
 </html>
